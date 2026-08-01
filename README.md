@@ -31,7 +31,6 @@ heart-disease-prediction/
 ├── notebooks/
 │   └── heart_disease.ipynb    # EDA, model comparison, and training
 ├── requirements.txt
-├── LICENSE
 ├── .gitignore
 └── README.md
 ```
@@ -121,10 +120,6 @@ Deploy for free on [Streamlit Community Cloud](https://streamlit.io/cloud):
 - [ ] Add input validation and unit tests
 - [ ] Add a confusion matrix / ROC curve plot to the notebook and README
 - [ ] Try ensemble methods (Random Forest, XGBoost) for comparison
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Disclaimer
 
