@@ -23,18 +23,29 @@ oldpeak = st.slider("Oldpeak (ST depression induced by exercise relative to rest
 stSlope = st.selectbox("ST Slope", ["Up", "Flat", "Down"])
 
 if st.button("Predict"):
-    raw_input = {
+    # Map friendly UI labels to the exact category codes the model was
+    # trained on (see model/heart_columns.pkl). One category per feature
+    # is the "baseline" and was dropped during training (drop_first=True),
+    # so it's intentionally left out of raw_input below and stays all-zero.
+    sex_code = {"Male": "M", "Female": "F"}[sex]                      # baseline: F
+    angina_code = {"Yes": "Y", "No": "N"}[exerciseAngina]              # baseline: N
+    ecg_code = {
+        "Normal": "Normal",
+        "ST-T Wave Abnormality": "ST",
+        "Left Ventricular Hypertrophy": "LVH",                        # baseline: LVH
+    }[restingECG]
 
+    raw_input = {
         "Age": age,
         "RestingBP": restingBP,
         "Cholesterol": cholesterol,
         "FastingBS": fastingBS,
         "MaxHR": maxHR,
         "Oldpeak": oldpeak,
-        "Sex_" + sex: 1,
+        "Sex_" + sex_code: 1,
         "ChestPainType_" + chestPainType: 1,
-        "RestingECG_" + restingECG: 1,
-        "ExerciseAngina_" + exerciseAngina: 1,
+        "RestingECG_" + ecg_code: 1,
+        "ExerciseAngina_" + angina_code: 1,
         "ST_Slope_" + stSlope: 1
     }
 
