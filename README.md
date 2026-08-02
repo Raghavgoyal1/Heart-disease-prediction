@@ -3,9 +3,17 @@
 A Streamlit web app that predicts a patient's risk of heart disease using a
 K-Nearest Neighbors (KNN) classifier trained on clinical health data.
 
+</div>
+
+---
+
 ## Demo
 
 Run locally with `streamlit run app.py` — see [Setup](#setup) below.
+
+</div>
+
+---
 
 ## Features
 
@@ -15,6 +23,10 @@ Run locally with `streamlit run app.py` — see [Setup](#setup) below.
 - Uses a pre-trained scikit-learn KNN model with feature scaling
 - Correctly one-hot encodes categorical inputs to match the columns the
   model was trained on
+
+</div>
+
+---
 
 ## Project Structure
 
@@ -36,6 +48,10 @@ heart-disease-prediction/
 ```
 ---
 
+</div>
+
+---
+
 ## 🛠️ Tech Stack
 
 <div align="center">
@@ -48,6 +64,10 @@ heart-disease-prediction/
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter_Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+</div>
+
+---
 
 ## Dataset
 
@@ -72,6 +92,10 @@ and a binary `HeartDisease` target.
 | ST_Slope | Up, Flat, Down |
 | HeartDisease | 1 = heart disease, 0 = normal (target) |
 
+</div>
+
+---
+
 ## Model
 
 - **Algorithm:** K-Nearest Neighbors (`scikit-learn`) — selected after
@@ -80,6 +104,10 @@ and a binary `HeartDisease` target.
   `drop_first=True`), numerical features scaled with `StandardScaler`
 - Trained artifacts are checked into `model/` so the app runs out of the box
   without retraining
+
+</div>
+
+---
 
 ### Model comparison (held-out test set)
 
@@ -93,6 +121,10 @@ and a binary `HeartDisease` target.
 
 KNN gave the best accuracy and F1 score of the models compared, which is why
 it was chosen for the deployed app.
+
+</div>
+
+---
 
 ## Setup
 
@@ -121,6 +153,10 @@ pip install -r requirements-dev.txt
 jupyter notebook notebooks/heart_disease.ipynb
 ```
 
+</div>
+
+---
+
 ## Deploying
 
 Deploy for free on [Streamlit Community Cloud](https://streamlit.io/cloud):
@@ -128,12 +164,20 @@ Deploy for free on [Streamlit Community Cloud](https://streamlit.io/cloud):
 2. Go to share.streamlit.io, connect your GitHub account, and select this repo.
 3. Set the main file path to `app.py` and deploy.
 
+</div>
+
+---
+
 ## Roadmap / Ideas
 
 - [ ] Add cross-validation and hyperparameter tuning for KNN (`n_neighbors`, weighting)
 - [ ] Add input validation and unit tests
 - [ ] Add a confusion matrix / ROC curve plot to the notebook and README
 - [ ] Try ensemble methods (Random Forest, XGBoost) for comparison
+
+</div>
+
+---
 
 ## Disclaimer
 
