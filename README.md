@@ -7,7 +7,7 @@ K-Nearest Neighbors (KNN) classifier trained on clinical health data.
 
 ---
 
-## Demo
+## 🎯 Demo
 
 Run locally with `streamlit run app.py` — see [Setup](#setup) below.
 
@@ -15,7 +15,7 @@ Run locally with `streamlit run app.py` — see [Setup](#setup) below.
 
 ---
 
-## Features
+## 📁 Features
 
 - Simple form-based UI to enter patient details (age, sex, chest pain type,
   blood pressure, cholesterol, ECG results, exercise-induced angina, etc.)
@@ -28,7 +28,7 @@ Run locally with `streamlit run app.py` — see [Setup](#setup) below.
 
 ---
 
-## Project Structure
+## 🔄️ Project Structure
 
 ```
 heart-disease-prediction/
@@ -69,7 +69,7 @@ heart-disease-prediction/
 
 ---
 
-## Dataset
+## 📁 Dataset
 
 The model is trained on the [Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
 (also available as `data/heart.csv` in this repo), which combines five
@@ -96,7 +96,7 @@ and a binary `HeartDisease` target.
 
 ---
 
-## Model
+## 📊 Model
 
 - **Algorithm:** K-Nearest Neighbors (`scikit-learn`) — selected after
   comparing several classifiers (see `notebooks/heart_disease.ipynb`)
@@ -126,7 +126,7 @@ it was chosen for the deployed app.
 
 ---
 
-## Setup
+## ▶️ Setup
 
 1. Clone the repo:
    ```bash
