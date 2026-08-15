@@ -186,12 +186,6 @@ substitute for professional medical advice, diagnosis, or treatment.
 
 </div>
 
-## 📄 License
-
-This project is available for educational and personal use.
-
-<br>
-
 <div align="center">
 
 **If this project helped you, consider giving it a ⭐**
