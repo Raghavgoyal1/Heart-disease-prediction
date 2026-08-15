@@ -186,6 +186,8 @@ substitute for professional medical advice, diagnosis, or treatment.
 
 </div>
 
+<br>
+
 <div align="center">
 
 **If this project helped you, consider giving it a ⭐**
